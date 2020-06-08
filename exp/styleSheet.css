@@ -1,0 +1,339 @@
+body {
+  background: linear-gradient(217deg, rgb(105, 163, 67), rgb(50, 100, 16));
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  background-attachment: fixed;
+  margin: 0;
+  height: 100%;
+}
+
+.pagediv {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.loginContainer {
+  background-color: rgb(241, 255, 248);
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+
+  width: 300px;
+  min-height: 200px;
+  border-radius: 2px;
+
+  margin: 20px auto;
+  padding: 30px;
+  -webkit-box-shadow: 0px 0px 35px 8px rgba(0,0,0,0.25);
+  -moz-box-shadow: 0px 0px 35px 8px rgba(0,0,0,0.25);
+  box-shadow: 0px 0px 35px 8px rgba(0,0,0,0.25);
+
+}
+
+.divcenter{
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+input[type=text], input[type=password], input[type=number], input[type=date], .manBoxStyle {
+  width: 200px;
+  height: 40px;
+  padding: 6px 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid rgb(30, 184, 132);
+  border-radius: 2px;
+  box-sizing: border-box;
+  }
+
+.logbut{
+  width: 75%;
+  height: 75px;
+  background-color: rgb(30, 184, 132);
+  font-size: medium;
+  color: rgb(16, 48, 37);
+  padding: 3px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 1.5px;
+  cursor: pointer;
+}
+
+.sub {
+  width: 50%;
+  height: 30px;
+  background-color: rgb(30, 184, 132);
+  font-size: medium;
+  color: rgb(16, 48, 37);
+  padding: 3px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 1.5px;
+  cursor: pointer;
+}
+
+.pic {
+  height: 20px;
+  padding-right: 5px;
+  margin-top: 5px;
+  opacity: 0.8;
+  filter: invert(56%) sepia(88%) saturate(384%) hue-rotate(108deg) brightness(88%) contrast(90%);
+}
+
+.movingHeader {
+  padding: 10px 16px;
+  background: rgb(232, 238, 232);
+  color: #1c3121;
+  z-index:2;
+  display:block;
+  
+  -webkit-box-shadow: 0px 0px 23px -10px rgba(0,0,0,1);
+  -moz-box-shadow: 0px 0px 23px -10px rgba(0,0,0,1);
+  box-shadow: 0px 0px 23px -10px rgba(0,0,0,1);
+}
+
+.quickAddHeader {
+  padding: 10px 16px;
+  background: rgb(232, 238, 232);
+  color: #1c3121;
+  
+}
+  
+.content {
+  padding: 16px;
+}
+  
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+.status {
+  display: inline-flex;
+  margin-top: 5px;
+
+  height: fit-content;
+  min-height: 24px;
+  width: fit-content;
+  padding: 10px;
+  font-size: large;
+  border-radius: 1.5px;
+  border-color: #1c3121;
+  border-style: solid;
+  border-width: 1px;
+  background-color: rgb(255, 255, 255);;
+
+  -webkit-box-shadow: 0px 0px 23px -10px rgba(0,0,0,1);
+  -moz-box-shadow: 0px 0px 23px -10px rgba(0,0,0,1);
+  box-shadow: 0px 0px 23px -10px rgba(0,0,0,1);
+}
+
+.headlist{
+  list-style-type: none;
+  margin: 0;
+  padding: 0px;
+  overflow: auto;
+}
+
+.sor{
+  float: left;
+  margin: 5px;
+  
+}
+
+.transtable{
+  border: 1px solid rgba(255,255,255,0.3);
+  padding: 5px;
+  background-color: rgba(196, 212, 188, 0.925);
+  
+}
+
+.srcRow{
+  width:fit-content;
+  padding: 5px 10px 5px 10px;
+}
+
+.topRow {
+  background-color: rgba(95, 151, 57, 0.63);
+  font-weight: bold;
+  height: 40px;
+  color: rgb(10, 48, 10);
+}
+
+.transtable tr:hover{
+  background-color: rgba(95, 151, 57, 0.63);
+}
+
+.transtable tr:hover td {
+  background-color: transparent;
+}
+
+/*.divForTable {
+  left: 50%;
+  top:110%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  display: block;
+  background-color: #dcdcdc;
+  z-index: 1;
+}*/
+
+.divForTable {
+  z-index: 1;
+  background-color: #dcdcdc;
+  display: inline-block;
+  margin: 10px 0 20px 0;
+  position: relative;
+  
+}
+
+.exptransacbut {
+  box-shadow:inset 0px 0px 5px 0px #9b1910;
+  background-color:#ca9a97a8;
+  border-radius:2.5px;
+  border:2px solid #b60d0d;
+  display:block;
+  cursor:pointer;
+  color:#53060c;
+  font-family:Arial;
+  font-weight: 90;
+  font-size:15px;
+  padding:6px 15px;
+  text-decoration:none;
+}
+.exptransacbut:hover {
+  background-color:#a13838be;
+  color:#f5dfe0;
+}
+.exptransacbut:active {
+  position:relative;
+  top:1px;
+}
+
+.inctransacbut {
+  box-shadow:inset 0px 0px 5px 0px #466b3c;
+  height: initial;
+  background-color:#9dd1abcb;
+  border-radius:2.5px;
+  border:2px solid #659458;
+  display:block;
+  cursor:pointer;
+  color:#1c2e12;
+  font-family:Arial;
+  font-size:15px;
+  font-weight: 90;
+  padding:6px 15px;
+  text-decoration:none;
+}
+.inctransacbut:hover {
+  background-color:rgb(93, 141, 67);
+  color:#d5f7d5;
+}
+.inctransacbut:active {
+  position:relative;
+  top:1px;
+}
+
+
+
+.emptyOuttransacbut, .emptyIntransacbut {
+  box-shadow:inset 0px 0px 5px 0px #ffffffd8;
+  background-color:#ffffff75;
+  border-radius:2.5px;
+  height:initial;
+  border:2px solid #ffffff;
+  display:flex;
+  cursor:pointer;
+  color:#666666;
+  font-family:Arial;
+  font-size:15px;
+  font-weight:bold;
+  padding:6px 24px;
+  text-decoration:none;
+}
+
+.emptyIntransacbut{
+  background-color:#d7f7d68e;
+}
+
+.emptyOuttransacbut{
+  background-color:#f7d6d68e;
+}
+.emptyOuttransacbut:hover, .emptyIntransacbut:hover {
+  
+}
+.emptyOuttransacbut:active, .emptyIntransacbut:active {
+ 
+}
+
+.statrow{
+  list-style-type: none;
+  margin: 0;
+  padding: 0px;
+  overflow: hidden;
+}
+
+.statdiv{
+  padding-top:4px;
+  width: 130px;
+  height: 90px;
+  font-size: larger;
+  border-radius: 2px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+}
+
+.sdnavdd {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  background-color: #dcdcdc;
+  overflow-x: hidden;
+  transition: 0.25s;
+  padding-top: 10px;
+
+  -webkit-box-shadow: 0px 0px 23px -10px rgba(0,0,0,1);
+  -moz-box-shadow: 0px 0px 23px -10px rgba(0,0,0,1);
+  box-shadow: 0px 0px 23px -10px rgba(0,0,0,1);
+}
+
+.sdnavdd a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sdnavdd a:hover {
+  color: #f1f1f1;
+}
+
+.sdnavdd .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 900px) {
+  .sdnavdd {padding-top: 15px;}
+  .sdnavdd a {font-size: 18px;}
+}
+
+.soka{
+  font-size: 100px;
+}
